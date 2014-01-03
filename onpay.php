@@ -91,7 +91,7 @@ function gateway_onpay($separator, $sessionid) {
         exit("<pre>" . print_r($data, true) . "</pre>");
     }
     $output = "
-  	<form id=\"onpay_form\" name=\"onpay_form\" method=\"post\" action=\"$onpay_url\">\n";
+		<form id=\"onpay_form\" name=\"onpay_form\" method=\"post\" action=\"$onpay_url\">\n";
 
     foreach ($data as $n => $v) {
         $output .= "			<input type=\"hidden\" name=\"$n\" value=\"$v\" />\n";
